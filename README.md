@@ -1,5 +1,7 @@
 # stylelint-no-indistinguishable-colors
 
+[Stylelint](http://stylelint.io) plugin that disallow colors that are suspiciously close to being identical, using [css-colorguard](https://github.com/SlexAxton/css-colorguard).
+
 ## Installation
 
 ```
@@ -20,3 +22,33 @@ Update your Stylelint config with following rules:
   }
 }
 ```
+
+## Options
+
+Boolean, or array of options, where the first element is `true`, and the second is object of options.
+
+### true
+
+Defaults to Colorguard's threshold of 3.
+
+### Optional secondary options
+
+Corresponds to Colorguard [options object](https://github.com/SlexAxton/css-colorguard#options).
+
+#### ignore: Array ['#colorA', '#colorB']
+
+Hex codes of colors that you would like to ignore completely
+
+#### threshold: Number
+
+Number can be between `0` and `100`. The default is `3`.
+
+The lower the threshold, the more similar colors have to be to trigger a violation. The higher the threshold, the more violations you will get.
+
+#### whitelist: Array [['#colorA', '#colorB'], ['#colorC', '#colorD']]
+
+An array of color pairs to ignore.
+
+#### allowEquivalentNotation: Boolean
+
+By default, colorguard will complain if identical colors are represented with different notations. For example, `#000`, `#000000`, `rgba(0, 0, 0, 0)`, and `black`. If you want to permit these equivalent notations, set this option to `true`.
