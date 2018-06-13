@@ -13,6 +13,8 @@
     "postcss": "^6.0.22"
   },
   "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-node": "^3.0.0",
     "stylelint": "^9.2.1"
   },
   "peerDependencies": {

@@ -1,0 +1,6 @@
+{
+  "extends": ["node"],
+  "rules": {
+      "import/no-commonjs": false
+    }
+}
