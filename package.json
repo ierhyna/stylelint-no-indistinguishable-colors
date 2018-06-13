@@ -1,0 +1,21 @@
+{
+  "name": "stylelint-no-indistinguishable-colors",
+  "version": "1.0.0",
+  "description": "Stylelint plugin to add rule no-indistinguishable-colors",
+  "keywords": [
+    "stylelint-plugin"
+  ],
+  "main": "lib/index.js",
+  "author": "Irina Sokolovskaja <sokolovskaja.irina@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "colorguard": "^1.2.1",
+    "postcss": "^6.0.22"
+  },
+  "devDependencies": {
+    "stylelint": "^9.2.1"
+  },
+  "peerDependencies": {
+    "stylelint": "^9.2.1"
+  }
+}
