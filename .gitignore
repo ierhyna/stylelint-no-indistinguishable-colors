@@ -1,6 +1,7 @@
 node_modules/
 coverage/
 .jest/
+__snapshots__
 
 .DS_Store
 *.log
