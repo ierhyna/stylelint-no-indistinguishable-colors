@@ -2,11 +2,17 @@
   "name": "stylelint-no-indistinguishable-colors",
   "version": "1.1.1",
   "description": "Stylelint plugin to add rule no-indistinguishable-colors",
-  "keywords": [
-    "stylelint-plugin"
-  ],
+  "keywords": ["stylelint-plugin"],
   "main": "lib/index.js",
   "author": "Irina Sokolovskaja <sokolovskaja.irina@gmail.com>",
+  "homepage": "https://github.com/ierhyna/stylelint-no-indistinguishable-colors",
+  "bugs": {
+    "url": "https://github.com/ierhyna/stylelint-no-indistinguishable-colors/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ierhyna/stylelint-no-indistinguishable-colors.git"
+  },
   "license": "MIT",
   "dependencies": {
     "colorguard": "^1.2.1",
