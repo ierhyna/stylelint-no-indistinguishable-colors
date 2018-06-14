@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`stylelint-no-indistinguishable-colors true option should enable linting 1`] = `
+Array [
+  Object {
+    "deprecations": Array [],
+    "errored": true,
+    "invalidOptionWarnings": Array [],
+    "parseErrors": Array [],
+    "source": "<input css 1>",
+    "warnings": Array [
+      Object {
+        "column": 20,
+        "line": 1,
+        "rule": "plugin/stylelint-no-indistinguishable-colors",
+        "severity": "error",
+        "text": "Unexpected indistinguishable colors \\"#010101\\" and \\"#000\\". (plugin/stylelint-no-indistinguishable-colors)",
+      },
+    ],
+  },
+]
+`;
