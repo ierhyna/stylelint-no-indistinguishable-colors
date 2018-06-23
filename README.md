@@ -1,5 +1,8 @@
 # stylelint-no-indistinguishable-colors
 
+[![Travis](https://img.shields.io/travis/ierhyna/stylelint-no-indistinguishable-colors/master.svg)](https://travis-ci.org/ierhyna/stylelint-no-indistinguishable-colors)
+[![NPM Version](https://img.shields.io/npm/v/stylelint-no-indistinguishable-colors.svg)](https://www.npmjs.com/package/stylelint-no-indistinguishable-colors)
+
 [Stylelint](http://stylelint.io) plugin that disallows colors that are suspiciously close to being identical, using [css-colorguard](https://github.com/SlexAxton/css-colorguard).
 
 ## Installation
