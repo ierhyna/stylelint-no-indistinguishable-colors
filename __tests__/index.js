@@ -1,8 +1,6 @@
 const stylelint = require("stylelint");
 const plugin = require("../lib");
-const messages = plugin.messages;
 const ruleName = plugin.ruleName;
-const rule = plugin.rule;
 
 function getOptions(code, rules) {
   return {

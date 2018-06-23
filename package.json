@@ -2,9 +2,7 @@
   "name": "stylelint-no-indistinguishable-colors",
   "version": "1.1.2",
   "description": "Stylelint plugin to add rule no-indistinguishable-colors",
-  "keywords": [
-    "stylelint-plugin"
-  ],
+  "keywords": ["stylelint-plugin"],
   "main": "lib/index.js",
   "author": "Irina Sokolovskaja <sokolovskaja.irina@gmail.com>",
   "homepage": "https://github.com/ierhyna/stylelint-no-indistinguishable-colors",
@@ -17,6 +15,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "lint": "eslint 'lib/**/*.js' '__tests__/**/*.js'",
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
