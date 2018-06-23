@@ -27,9 +27,11 @@ Update your Stylelint config with following rules:
 
 Boolean, or an array of options, where the first element is `true`, and the second is an options object.
 
-### true
+### Boolean option
 
-Defaults to Colorguard's threshold of 3.
+`true`: Enables the plugin. Defaults to Colorguard's threshold of 3.
+
+`false`: Disables the plugin.
 
 ### Optional secondary options
 
