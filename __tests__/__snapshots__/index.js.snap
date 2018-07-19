@@ -64,6 +64,40 @@ Array [
 ]
 `;
 
+exports[`stylelint-no-indistinguishable-colors incorrect parameters should display error on incorrect arguments 1`] = `
+Array [
+  Object {
+    "deprecations": Array [],
+    "errored": true,
+    "invalidOptionWarnings": Array [
+      Object {
+        "text": "Invalid value \\"#eee\\" for option \\"allowEquivalentNotation\\" of rule \\"plugin/stylelint-no-indistinguishable-colors\\"",
+      },
+    ],
+    "parseErrors": Array [],
+    "source": "<input css 10>",
+    "warnings": Array [],
+  },
+]
+`;
+
+exports[`stylelint-no-indistinguishable-colors incorrect parameters should display error on incorrect options 1`] = `
+Array [
+  Object {
+    "deprecations": Array [],
+    "errored": true,
+    "invalidOptionWarnings": Array [
+      Object {
+        "text": "Invalid option name \\"not_exists\\" for rule \\"plugin/stylelint-no-indistinguishable-colors\\"",
+      },
+    ],
+    "parseErrors": Array [],
+    "source": "<input css 9>",
+    "warnings": Array [],
+  },
+]
+`;
+
 exports[`stylelint-no-indistinguishable-colors threshold should set higher threshold 1`] = `
 Array [
   Object {

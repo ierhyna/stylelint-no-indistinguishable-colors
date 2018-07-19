@@ -153,4 +153,37 @@ describe("stylelint-no-indistinguishable-colors", () => {
         .catch(error => done(error));
     });
   });
+
+  describe("incorrect parameters", () => {
+    it("should display error on incorrect options", done => {
+      const rules = {
+        [ruleName]: [true, { not_exists: true }]
+      };
+      const code = `div {}`;
+
+      return stylelint
+        .lint(getOptions(code, rules))
+        .then(result => {
+          expect(result.errored).toBe(true);
+          expect(JSON.parse(result.output)).toMatchSnapshot();
+          return done();
+        })
+        .catch(error => done(error));
+    });
+    it("should display error on incorrect arguments", done => {
+      const rules = {
+        [ruleName]: [true, { allowEquivalentNotation: ["#eee"] }]
+      };
+      const code = `div {}`;
+
+      return stylelint
+        .lint(getOptions(code, rules))
+        .then(result => {
+          expect(result.errored).toBe(true);
+          expect(JSON.parse(result.output)).toMatchSnapshot();
+          return done();
+        })
+        .catch(error => done(error));
+    });
+  });
 });
