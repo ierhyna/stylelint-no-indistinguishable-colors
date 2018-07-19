@@ -42,7 +42,7 @@ Corresponds to Colorguard [options object](https://github.com/SlexAxton/css-colo
 
 #### ignore: Array ['#colorA', '#colorB']
 
-Hex color codes that you would like to ignore completely
+Hex color codes that you would like to ignore completely.
 
 #### threshold: Number
 

@@ -19,7 +19,7 @@ describe("stylelint-no-indistinguishable-colors", () => {
       const rules = {
         [ruleName]: true
       };
-      const code = `div { color: #000; color: #010101; }`;
+      const code = `div { color: #000; background: #010101; }`;
 
       return stylelint
         .lint(getOptions(code, rules))
@@ -37,7 +37,111 @@ describe("stylelint-no-indistinguishable-colors", () => {
       const rules = {
         [ruleName]: false
       };
-      const code = `div { color: #000; color: #010101; }`;
+      const code = `div { color: #000; background: #010101; }`;
+
+      return stylelint
+        .lint(getOptions(code, rules))
+        .then(result => {
+          expect(result.errored).toBe(false);
+          expect(JSON.parse(result.output)).toMatchSnapshot();
+          return done();
+        })
+        .catch(error => done(error));
+    });
+  });
+
+  describe("ignore", () => {
+    it("should ignore selected colors", done => {
+      const rules = {
+        [ruleName]: [true, { ignore: ["#000000", "#010101"] }]
+      };
+      const code = `div { color: #000; border: 1px solid #010101; background: #111 }`;
+
+      return stylelint
+        .lint(getOptions(code, rules))
+        .then(result => {
+          expect(result.errored).toBe(false);
+          expect(JSON.parse(result.output)).toMatchSnapshot();
+          return done();
+        })
+        .catch(error => done(error));
+    });
+  });
+
+  describe("threshold", () => {
+    it("should set higher threshold", done => {
+      const rules = {
+        [ruleName]: [true, { threshold: 10 }]
+      };
+      const code = `div { color: #000; background: #222; }`;
+
+      return stylelint
+        .lint(getOptions(code, rules))
+        .then(result => {
+          expect(result.errored).toBe(true);
+          expect(JSON.parse(result.output)).toMatchSnapshot();
+          return done();
+        })
+        .catch(error => done(error));
+    });
+
+    it("should set lower threshold", done => {
+      const rules = {
+        [ruleName]: [true, { threshold: 1 }]
+      };
+      const code = `div { color: #000; background: #222; }`;
+
+      return stylelint
+        .lint(getOptions(code, rules))
+        .then(result => {
+          expect(result.errored).toBe(false);
+          expect(JSON.parse(result.output)).toMatchSnapshot();
+          return done();
+        })
+        .catch(error => done(error));
+    });
+  });
+
+  describe("whitelist", () => {
+    it("should ignore selected color pairs", done => {
+      const rules = {
+        [ruleName]: [true, { whitelist: [["#000000", "#010101"], ["#eeeeee", "#dddddd"]] }]
+      };
+      const code = `div { color: #000; color: #010101; border: 1px solid #ddd; background: #eee }`;
+
+      return stylelint
+        .lint(getOptions(code, rules))
+        .then(result => {
+          expect(result.errored).toBe(false);
+          expect(JSON.parse(result.output)).toMatchSnapshot();
+          return done();
+        })
+        .catch(error => done(error));
+    });
+  });
+
+  describe("allowEquivalentNotation", () => {
+    it("should disable equivalent notation", done => {
+      const rules = {
+        [ruleName]: [true, { allowEquivalentNotation: false }]
+      };
+      const code = `div { color: #000; background: black; border: 1px solid rgb(0,0,0); }`;
+
+      return stylelint
+        .lint(getOptions(code, rules))
+        .then(result => {
+          expect(result.errored).toBe(true);
+          expect(JSON.parse(result.output)).toMatchSnapshot();
+          return done();
+        })
+        .catch(error => done(error));
+    });
+
+    it("should enable equivalent notation", done => {
+      const rules = {
+        [ruleName]: [true, { allowEquivalentNotation: true }]
+      };
+      const code = `div { color: #000; background: black; border: 1px solid rgb(0,0,0); }`;
 
       return stylelint
         .lint(getOptions(code, rules))

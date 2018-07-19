@@ -1,5 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`stylelint-no-indistinguishable-colors allowEquivalentNotation should disable equivalent notation 1`] = `
+Array [
+  Object {
+    "deprecations": Array [],
+    "errored": true,
+    "invalidOptionWarnings": Array [],
+    "parseErrors": Array [],
+    "source": "<input css 7>",
+    "warnings": Array [
+      Object {
+        "column": 20,
+        "line": 1,
+        "rule": "plugin/stylelint-no-indistinguishable-colors",
+        "severity": "error",
+        "text": "Unexpected indistinguishable colors \\"black\\" and \\"#000\\". (plugin/stylelint-no-indistinguishable-colors)",
+      },
+      Object {
+        "column": 39,
+        "line": 1,
+        "rule": "plugin/stylelint-no-indistinguishable-colors",
+        "severity": "error",
+        "text": "Unexpected indistinguishable colors \\"rgb(0,0,0)\\" and \\"#000\\". (plugin/stylelint-no-indistinguishable-colors)",
+      },
+    ],
+  },
+]
+`;
+
+exports[`stylelint-no-indistinguishable-colors allowEquivalentNotation should enable equivalent notation 1`] = `
+Array [
+  Object {
+    "deprecations": Array [],
+    "invalidOptionWarnings": Array [],
+    "parseErrors": Array [],
+    "source": "<input css 8>",
+    "warnings": Array [],
+  },
+]
+`;
+
 exports[`stylelint-no-indistinguishable-colors false option should disable rule 1`] = `
 Array [
   Object {
@@ -7,6 +47,51 @@ Array [
     "invalidOptionWarnings": Array [],
     "parseErrors": Array [],
     "source": "<input css 2>",
+    "warnings": Array [],
+  },
+]
+`;
+
+exports[`stylelint-no-indistinguishable-colors ignore should ignore selected colors 1`] = `
+Array [
+  Object {
+    "deprecations": Array [],
+    "invalidOptionWarnings": Array [],
+    "parseErrors": Array [],
+    "source": "<input css 3>",
+    "warnings": Array [],
+  },
+]
+`;
+
+exports[`stylelint-no-indistinguishable-colors threshold should set higher threshold 1`] = `
+Array [
+  Object {
+    "deprecations": Array [],
+    "errored": true,
+    "invalidOptionWarnings": Array [],
+    "parseErrors": Array [],
+    "source": "<input css 4>",
+    "warnings": Array [
+      Object {
+        "column": 20,
+        "line": 1,
+        "rule": "plugin/stylelint-no-indistinguishable-colors",
+        "severity": "error",
+        "text": "Unexpected indistinguishable colors \\"#222\\" and \\"#000\\". (plugin/stylelint-no-indistinguishable-colors)",
+      },
+    ],
+  },
+]
+`;
+
+exports[`stylelint-no-indistinguishable-colors threshold should set lower threshold 1`] = `
+Array [
+  Object {
+    "deprecations": Array [],
+    "invalidOptionWarnings": Array [],
+    "parseErrors": Array [],
+    "source": "<input css 5>",
     "warnings": Array [],
   },
 ]
@@ -29,6 +114,18 @@ Array [
         "text": "Unexpected indistinguishable colors \\"#010101\\" and \\"#000\\". (plugin/stylelint-no-indistinguishable-colors)",
       },
     ],
+  },
+]
+`;
+
+exports[`stylelint-no-indistinguishable-colors whitelist should ignore selected color pairs 1`] = `
+Array [
+  Object {
+    "deprecations": Array [],
+    "invalidOptionWarnings": Array [],
+    "parseErrors": Array [],
+    "source": "<input css 6>",
+    "warnings": Array [],
   },
 ]
 `;
