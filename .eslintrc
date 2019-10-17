@@ -5,6 +5,6 @@
   },
   "extends": ["node"],
   "rules": {
-      "import/no-commonjs": false
-    }
+    "import/no-commonjs": 0
+  }
 }
