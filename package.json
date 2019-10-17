@@ -23,13 +23,13 @@
   },
   "dependencies": {
     "colorguard": "^1.2.1",
-    "postcss": "^6.0.22"
+    "postcss": "7.0.18"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-node": "^3.0.0",
-    "jest": "^23.1.0",
-    "stylelint": "^9.2.1"
+    "eslint": "6.5.1",
+    "eslint-config-node": "4.0.0",
+    "jest": "24.9.0",
+    "stylelint": "11.1.1"
   },
   "peerDependencies": {
     "stylelint": "^9.2.1"
