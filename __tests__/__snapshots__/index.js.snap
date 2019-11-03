@@ -32,6 +32,7 @@ exports[`stylelint-no-indistinguishable-colors allowEquivalentNotation should en
 Array [
   Object {
     "deprecations": Array [],
+    "errored": false,
     "invalidOptionWarnings": Array [],
     "parseErrors": Array [],
     "source": "<input css 8>",
@@ -44,6 +45,7 @@ exports[`stylelint-no-indistinguishable-colors false option should disable rule 
 Array [
   Object {
     "deprecations": Array [],
+    "errored": false,
     "invalidOptionWarnings": Array [],
     "parseErrors": Array [],
     "source": "<input css 2>",
@@ -56,6 +58,7 @@ exports[`stylelint-no-indistinguishable-colors ignore should ignore selected col
 Array [
   Object {
     "deprecations": Array [],
+    "errored": false,
     "invalidOptionWarnings": Array [],
     "parseErrors": Array [],
     "source": "<input css 3>",
@@ -123,6 +126,7 @@ exports[`stylelint-no-indistinguishable-colors threshold should set lower thresh
 Array [
   Object {
     "deprecations": Array [],
+    "errored": false,
     "invalidOptionWarnings": Array [],
     "parseErrors": Array [],
     "source": "<input css 5>",
@@ -156,6 +160,7 @@ exports[`stylelint-no-indistinguishable-colors whitelist should ignore selected 
 Array [
   Object {
     "deprecations": Array [],
+    "errored": false,
     "invalidOptionWarnings": Array [],
     "parseErrors": Array [],
     "source": "<input css 6>",
