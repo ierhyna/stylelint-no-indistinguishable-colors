@@ -1,6 +1,7 @@
 node_modules/
 coverage/
 .jest/
+.idea/
 
 .DS_Store
 *.log
