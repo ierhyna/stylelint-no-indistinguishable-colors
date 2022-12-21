@@ -1,170 +1,207 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`stylelint-no-indistinguishable-colors allowEquivalentNotation should disable equivalent notation 1`] = `
-Array [
-  Object {
-    "deprecations": Array [],
-    "errored": true,
-    "invalidOptionWarnings": Array [],
-    "parseErrors": Array [],
-    "source": "<input css 7>",
-    "warnings": Array [
-      Object {
-        "column": 20,
-        "line": 1,
-        "rule": "plugin/stylelint-no-indistinguishable-colors",
-        "severity": "error",
-        "text": "Unexpected indistinguishable colors \\"black\\" and \\"#000\\". (plugin/stylelint-no-indistinguishable-colors)",
-      },
-      Object {
-        "column": 39,
-        "line": 1,
-        "rule": "plugin/stylelint-no-indistinguishable-colors",
-        "severity": "error",
-        "text": "Unexpected indistinguishable colors \\"rgb(0,0,0)\\" and \\"#000\\". (plugin/stylelint-no-indistinguishable-colors)",
-      },
-    ],
-  },
-]
+Object {
+  "Result": Array [
+    Object {
+      "deprecations": Array [],
+      "errored": true,
+      "invalidOptionWarnings": Array [],
+      "parseErrors": Array [],
+      "source": StringMatching /\\^<input\\.\\*css\\.\\*>\\$/,
+      "warnings": Array [
+        Object {
+          "column": 20,
+          "endColumn": 38,
+          "endLine": 1,
+          "line": 1,
+          "rule": "plugin/stylelint-no-indistinguishable-colors",
+          "severity": "error",
+          "text": Any<String>,
+        },
+        Object {
+          "column": 39,
+          "endColumn": 68,
+          "endLine": 1,
+          "line": 1,
+          "rule": "plugin/stylelint-no-indistinguishable-colors",
+          "severity": "error",
+          "text": Any<String>,
+        },
+        Object {
+          "column": 39,
+          "endColumn": 68,
+          "endLine": 1,
+          "line": 1,
+          "rule": "plugin/stylelint-no-indistinguishable-colors",
+          "severity": "error",
+          "text": Any<String>,
+        },
+      ],
+    },
+  ],
+}
 `;
 
 exports[`stylelint-no-indistinguishable-colors allowEquivalentNotation should enable equivalent notation 1`] = `
-Array [
-  Object {
-    "deprecations": Array [],
-    "errored": false,
-    "invalidOptionWarnings": Array [],
-    "parseErrors": Array [],
-    "source": "<input css 8>",
-    "warnings": Array [],
-  },
-]
+Object {
+  "Result": Array [
+    Object {
+      "deprecations": Array [],
+      "errored": false,
+      "invalidOptionWarnings": Array [],
+      "parseErrors": Array [],
+      "source": StringMatching /\\^<input\\.\\*css\\.\\*>\\$/,
+      "warnings": Array [],
+    },
+  ],
+}
 `;
 
 exports[`stylelint-no-indistinguishable-colors false option should disable rule 1`] = `
-Array [
-  Object {
-    "deprecations": Array [],
-    "errored": false,
-    "invalidOptionWarnings": Array [],
-    "parseErrors": Array [],
-    "source": "<input css 2>",
-    "warnings": Array [],
-  },
-]
+Object {
+  "Result": Array [
+    Object {
+      "deprecations": Array [],
+      "errored": false,
+      "invalidOptionWarnings": Array [],
+      "parseErrors": Array [],
+      "source": StringMatching /\\^<input\\.\\*css\\.\\*>\\$/,
+      "warnings": Array [],
+    },
+  ],
+}
 `;
 
 exports[`stylelint-no-indistinguishable-colors ignore should ignore selected colors 1`] = `
-Array [
-  Object {
-    "deprecations": Array [],
-    "errored": false,
-    "invalidOptionWarnings": Array [],
-    "parseErrors": Array [],
-    "source": "<input css 3>",
-    "warnings": Array [],
-  },
-]
+Object {
+  "Result": Array [
+    Object {
+      "deprecations": Array [],
+      "errored": false,
+      "invalidOptionWarnings": Array [],
+      "parseErrors": Array [],
+      "source": StringMatching /\\^<input\\.\\*css\\.\\*>\\$/,
+      "warnings": Array [],
+    },
+  ],
+}
 `;
 
 exports[`stylelint-no-indistinguishable-colors incorrect parameters should display error on incorrect arguments 1`] = `
-Array [
-  Object {
-    "deprecations": Array [],
-    "errored": true,
-    "invalidOptionWarnings": Array [
-      Object {
-        "text": "Invalid value \\"#eee\\" for option \\"allowEquivalentNotation\\" of rule \\"plugin/stylelint-no-indistinguishable-colors\\"",
-      },
-    ],
-    "parseErrors": Array [],
-    "source": "<input css 10>",
-    "warnings": Array [],
-  },
-]
+Object {
+  "Result": Array [
+    Object {
+      "deprecations": Array [],
+      "errored": true,
+      "invalidOptionWarnings": Array [
+        Object {
+          "text": Any<String>,
+        },
+      ],
+      "parseErrors": Array [],
+      "source": StringMatching /\\^<input\\.\\*css\\.\\*>\\$/,
+      "warnings": Array [],
+    },
+  ],
+}
 `;
 
 exports[`stylelint-no-indistinguishable-colors incorrect parameters should display error on incorrect options 1`] = `
-Array [
-  Object {
-    "deprecations": Array [],
-    "errored": true,
-    "invalidOptionWarnings": Array [
-      Object {
-        "text": "Invalid option name \\"not_exists\\" for rule \\"plugin/stylelint-no-indistinguishable-colors\\"",
-      },
-    ],
-    "parseErrors": Array [],
-    "source": "<input css 9>",
-    "warnings": Array [],
-  },
-]
+Object {
+  "Result": Array [
+    Object {
+      "deprecations": Array [],
+      "errored": true,
+      "invalidOptionWarnings": Array [
+        Object {
+          "text": Any<String>,
+        },
+      ],
+      "parseErrors": Array [],
+      "source": StringMatching /\\^<input\\.\\*css\\.\\*>\\$/,
+      "warnings": Array [],
+    },
+  ],
+}
 `;
 
 exports[`stylelint-no-indistinguishable-colors threshold should set higher threshold 1`] = `
-Array [
-  Object {
-    "deprecations": Array [],
-    "errored": true,
-    "invalidOptionWarnings": Array [],
-    "parseErrors": Array [],
-    "source": "<input css 4>",
-    "warnings": Array [
-      Object {
-        "column": 20,
-        "line": 1,
-        "rule": "plugin/stylelint-no-indistinguishable-colors",
-        "severity": "error",
-        "text": "Unexpected indistinguishable colors \\"#222\\" and \\"#000\\". (plugin/stylelint-no-indistinguishable-colors)",
-      },
-    ],
-  },
-]
+Object {
+  "Result": Array [
+    Object {
+      "deprecations": Array [],
+      "errored": true,
+      "invalidOptionWarnings": Array [],
+      "parseErrors": Array [],
+      "source": StringMatching /\\^<input\\.\\*css\\.\\*>\\$/,
+      "warnings": Array [
+        Object {
+          "column": 20,
+          "endColumn": 37,
+          "endLine": 1,
+          "line": 1,
+          "rule": "plugin/stylelint-no-indistinguishable-colors",
+          "severity": "error",
+          "text": Any<String>,
+        },
+      ],
+    },
+  ],
+}
 `;
 
 exports[`stylelint-no-indistinguishable-colors threshold should set lower threshold 1`] = `
-Array [
-  Object {
-    "deprecations": Array [],
-    "errored": false,
-    "invalidOptionWarnings": Array [],
-    "parseErrors": Array [],
-    "source": "<input css 5>",
-    "warnings": Array [],
-  },
-]
+Object {
+  "Result": Array [
+    Object {
+      "deprecations": Array [],
+      "errored": false,
+      "invalidOptionWarnings": Array [],
+      "parseErrors": Array [],
+      "source": StringMatching /\\^<input\\.\\*css\\.\\*>\\$/,
+      "warnings": Array [],
+    },
+  ],
+}
 `;
 
 exports[`stylelint-no-indistinguishable-colors true option should enable rule 1`] = `
-Array [
-  Object {
-    "deprecations": Array [],
-    "errored": true,
-    "invalidOptionWarnings": Array [],
-    "parseErrors": Array [],
-    "source": "<input css 1>",
-    "warnings": Array [
-      Object {
-        "column": 20,
-        "line": 1,
-        "rule": "plugin/stylelint-no-indistinguishable-colors",
-        "severity": "error",
-        "text": "Unexpected indistinguishable colors \\"#010101\\" and \\"#000\\". (plugin/stylelint-no-indistinguishable-colors)",
-      },
-    ],
-  },
-]
+Object {
+  "Result": Array [
+    Object {
+      "deprecations": Array [],
+      "errored": true,
+      "invalidOptionWarnings": Array [],
+      "parseErrors": Array [],
+      "source": StringMatching /\\^<input\\.\\*css\\.\\*>\\$/,
+      "warnings": Array [
+        Object {
+          "column": 20,
+          "endColumn": 40,
+          "endLine": 1,
+          "line": 1,
+          "rule": "plugin/stylelint-no-indistinguishable-colors",
+          "severity": "error",
+          "text": Any<String>,
+        },
+      ],
+    },
+  ],
+}
 `;
 
 exports[`stylelint-no-indistinguishable-colors whitelist should ignore selected color pairs 1`] = `
-Array [
-  Object {
-    "deprecations": Array [],
-    "errored": false,
-    "invalidOptionWarnings": Array [],
-    "parseErrors": Array [],
-    "source": "<input css 6>",
-    "warnings": Array [],
-  },
-]
+Object {
+  "Result": Array [
+    Object {
+      "deprecations": Array [],
+      "errored": false,
+      "invalidOptionWarnings": Array [],
+      "parseErrors": Array [],
+      "source": StringMatching /\\^<input\\.\\*css\\.\\*>\\$/,
+      "warnings": Array [],
+    },
+  ],
+}
 `;
