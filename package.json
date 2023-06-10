@@ -22,19 +22,19 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
-    "colorguard-processor": "1.0.1"
+    "colorguard-processor": "1.0.48"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.5",
-    "@babel/preset-env": "^7.20.2",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
     "@nazarkulyk/eslint-config-node": "^5.0.0",
-    "eslint": "^8.19.0",
-    "eslint-plugin-import": "^2.26.0",
-    "jest": "^29.0.0",
-    "stylelint": "^14.16.0"
+    "eslint": "^8.42.0",
+    "eslint-plugin-import": "^2.27.5",
+    "jest": "^29.5.0",
+    "stylelint": "^15.7.0"
   },
   "peerDependencies": {
-    "stylelint": "^11.1.1 || ^12.0.0 || ^13.0.0 || ^14.0.0"
+    "stylelint": "^11.1.1 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0"
   },
   "packageManager": "yarn@3.3.1"
 }
