@@ -3,6 +3,9 @@ const config = {
     escapeString: true,
     printBasicPrototype: true,
   },
+  transform: {
+    "^.+\\.(t|j)sx?$": "@swc/jest",
+  },
 };
 
 module.exports = config;

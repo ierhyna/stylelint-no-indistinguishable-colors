@@ -6,5 +6,8 @@
   "extends": ["@nazarkulyk/node"],
   "rules": {
     "import/no-commonjs": 0
+  },
+  "parserOptions": {
+    "requireConfigFile": false
   }
 }
