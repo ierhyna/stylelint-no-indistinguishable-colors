@@ -25,7 +25,6 @@
     "colorguard-processor": "1.0.48"
   },
   "devDependencies": {
-    "@nazarkulyk/eslint-config-node": "^5.0.0",
     "@swc/core": "^1.3.62",
     "@swc/jest": "^0.2.26",
     "eslint": "^8.42.0",
@@ -35,6 +34,5 @@
   },
   "peerDependencies": {
     "stylelint": "^11.1.1 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0"
-  },
-  "packageManager": "yarn@3.3.1"
+  }
 }

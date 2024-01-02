@@ -3,7 +3,7 @@
     "node": true,
     "jest": true
   },
-  "extends": ["@nazarkulyk/node"],
+  "extends": ["node"],
   "rules": {
     "import/no-commonjs": 0
   },
