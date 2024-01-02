@@ -1,6 +1,6 @@
 {
   "name": "stylelint-no-indistinguishable-colors",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Stylelint plugin to add rule no-indistinguishable-colors",
   "keywords": [
     "stylelint-plugin"
