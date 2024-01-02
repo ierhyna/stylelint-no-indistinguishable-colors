@@ -1,0 +1,25 @@
+name: Lint
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "master" ]
+
+jobs:
+  eslint:
+    name: Run ESLint scanning
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - run: npm install
+
+      - name: Run ESLint
+        run: npm run lint
+        continue-on-error: true
