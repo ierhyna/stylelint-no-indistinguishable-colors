@@ -30,4 +30,4 @@ jobs:
       - run: yarn install --immutable
       - run: yarn npm publish --access public
         env:
-          NPM_TOKEN: ${{secrets.npm_token}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
