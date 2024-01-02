@@ -1,13 +1,15 @@
 {
   "env": {
     "node": true,
-    "jest": true
+    "jest": true,
+    "es6": true
   },
-  "extends": ["node"],
+  "extends": ["eslint:recommended"],
   "rules": {
     "import/no-commonjs": 0
   },
   "parserOptions": {
-    "requireConfigFile": false
+    "requireConfigFile": false,
+    "ecmaVersion": 2020
   }
 }
