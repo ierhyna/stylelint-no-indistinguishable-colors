@@ -22,7 +22,7 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
-    "colorguard-processor": "1.0.48"
+    "colorguard-processor": "1.0.33"
   },
   "devDependencies": {
     "@swc/core": "^1.3.62",
