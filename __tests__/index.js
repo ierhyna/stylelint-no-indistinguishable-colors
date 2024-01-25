@@ -291,4 +291,26 @@ describe("stylelint-no-indistinguishable-colors", () => {
       });
     });
   });
+
+  describe("no side-effects", () => {
+    it("should ignore color names in font-family", async () => {
+      const rules = {
+        [ruleName]: true,
+      };
+      const code = `div { background: #fff; font-family: "Arial Black"; }`;
+
+      const result = await lint(getOptions(code, rules));
+      expect(result.errored).toBe(false);
+      expect({ Result: JSON.parse(result.output) }).toMatchSnapshot({
+        Result: Array(1).fill({
+          deprecations: [],
+          errored: false,
+          invalidOptionWarnings: [],
+          parseErrors: [],
+          source: expect.stringMatching("^<input.*css.*>$"),
+          warnings: [],
+        }),
+      });
+    });
+  });
 });
