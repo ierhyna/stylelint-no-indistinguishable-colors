@@ -126,6 +126,21 @@ Object {
 }
 `;
 
+exports[`stylelint-no-indistinguishable-colors no side-effects should ignore color names in font-family 1`] = `
+Object {
+  "Result": Array [
+    Object {
+      "deprecations": Array [],
+      "errored": false,
+      "invalidOptionWarnings": Array [],
+      "parseErrors": Array [],
+      "source": StringMatching /\\^<input\\.\\*css\\.\\*>\\$/,
+      "warnings": Array [],
+    },
+  ],
+}
+`;
+
 exports[`stylelint-no-indistinguishable-colors threshold should set higher threshold 1`] = `
 Object {
   "Result": Array [
